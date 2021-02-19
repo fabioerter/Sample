@@ -1,0 +1,38 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>GAB.Default.Application</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>GAB.Default.Application</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="GAB.Default.Application.csproj" File="GAB.Default.Application.csproj" ReplaceParameters="true">
+      <Folder Name="AutoMapper" TargetFolderName="AutoMapper">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AutoMapperConfig.cs">AutoMapperConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ViewModelToDomainMappingProfile.cs">ViewModelToDomainMappingProfile.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DomainToViewModelMappingProfile.cs">DomainToViewModelMappingProfile.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Base" TargetFolderName="Base">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppService.cs">AppService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Dtos" TargetFolderName="Dtos">
+        <ProjectItem ReplaceParameters="true" TargetFileName="PersonSampleDto.cs">PersonSampleDto.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <Folder Name="Interfaces" TargetFolderName="Interfaces">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IPersonSampleAppService.cs">IPersonSampleAppService.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PersonSampleAppService.cs">PersonSampleAppService.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="SimpleInjector" Version="5.1.0" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore" Version="5.1.0" />
+    <PackageReference Include="SimpleInjector.Integration.AspNetCore.Mvc" Version="5.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\$ext_projectname$.Application\$ext_projectname$.Application.csproj" />
+    <ProjectReference Include="..\$ext_projectname$.Domain.Services\$ext_projectname$.Domain.Services.csproj" />
+    <ProjectReference Include="..\$ext_projectname$.Infra.Data\$ext_projectname$.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

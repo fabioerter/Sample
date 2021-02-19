@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>GAB.Default.Domain.Services</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>GAB.Default.Domain.Services</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="GAB.Default.Domain.Services.csproj" File="GAB.Default.Domain.Services.csproj" ReplaceParameters="true">
+      <Folder Name="Services" TargetFolderName="Services">
+        <ProjectItem ReplaceParameters="true" TargetFileName="PersonSampleService.cs">PersonSampleService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Service.cs">Service.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Validations.resx">Validations.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Validations.Designer.cs">Validations.Designer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Validations" TargetFolderName="Validations">
+        <ProjectItem ReplaceParameters="true" TargetFileName="PersonSampleValidator.cs">PersonSampleValidator.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
